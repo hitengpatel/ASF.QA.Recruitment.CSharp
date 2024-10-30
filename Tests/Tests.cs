@@ -60,6 +60,11 @@ namespace Tests
         [TestMethod]
         public void TestUkWorldAPIResponse()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             //To DO - +Ve -  Test 200 Ok respons using moked API
             //To DO - -Ve - Test 400 Not Found respons using moked API
             //To DO - -Ve - Test 404 Not Authorised respons using moked API
@@ -69,6 +74,11 @@ namespace Tests
         [TestMethod]
         public void TestCanadaWorldAPIResponse()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             //To DO - +Ve -  Test 200 Ok respons using moked API
             //To DO - -Ve - Test 400 Not Found respons using moked API
             //To DO - -Ve - Test 404 Not Authorised respons using moked API
@@ -79,7 +89,12 @@ namespace Tests
         [TestMethod]
         [Description("Test sceanrio to test datetime diffrence for current Uk and candian time")] 
         public void CurrentDateTest()
-        { 
+        {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             // Runs the app and returns the output from Console.WriteLine
             capturedStdOut = _helpers.CapturedStdOut(_helpers.RunApp);
 
@@ -108,7 +123,11 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrence for for uk on new year (early morning)")]
         public void NewYearhDateTimeTest()
         {
-            //Mocked - Ideally from mocking service
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2025, 1, 1, 0, 0, 0), dateTimeFormatter);
             canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2025, 1, 1, 0, 0, 0), dateTimeFormatter);
             timeDiffrenceResponse = $"You are {DateDiffInTime(getSpecificUKTime(2025, 1, 1, 0, 0, 0), getSpecificCanadaTime(2025, 1, 1, 0, 0, 0))}m ahead of Canada";
@@ -134,6 +153,11 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrence on British March Daylight Time change")]
         public void BritishMarchTimeChangeTest()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             var ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2025, 3, 30, 1, 0, 1), dateTimeFormatter);
             var canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2025, 3, 30, 1, 0, 1), dateTimeFormatter);
             var timeDiffrenceResponse = $"You are {DateDiffInTime(getSpecificUKTime(2025, 3, 30, 1, 0, 1), getSpecificCanadaTime(2025, 3, 30, 1, 0, 1))}m ahead of Canada";
@@ -158,6 +182,10 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrence on British October Daylight Time change")]
         public void BritishOctoberTimeChangeTest()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
 
             ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2025, 10, 31, 2, 0, 1), dateTimeFormatter);
             canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2025, 10, 31, 2, 0, 1), dateTimeFormatter);
@@ -183,6 +211,11 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrencein 2026 (Non-Leap year) Time change")]
         public void NonLeapYearTimeChangeTest()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2026, 3, 1, 0, 0, 0), dateTimeFormatter);
             canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2026, 3, 1, 0, 0, 0), dateTimeFormatter);
             timeDiffrenceResponse = $"You are {DateDiffInTime(getSpecificUKTime(2026, 3, 1, 0, 0, 0), getSpecificCanadaTime(2026, 3, 1, 0, 0, 0))}m ahead of Canada";
@@ -207,6 +240,11 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrenc in 2028 (Leap year) Time change")]
         public void LeapYearTimeChangeTest()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2028, 3, 1, 0, 0, 0), dateTimeFormatter);
             canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2028, 3, 1, 0, 0, 0), dateTimeFormatter);
             timeDiffrenceResponse = $"You are {DateDiffInTime(getSpecificUKTime(2028, 3, 1, 0, 0, 0), getSpecificCanadaTime(2028, 3, 1, 0, 0, 0))}m ahead of Canada";
@@ -231,6 +269,11 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrence on Eastern March Daylight Time change")]
         public void EasternMarchTimeChangeTest()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             var ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2025, 3, 09, 7, 0, 0), dateTimeFormatter);
             var canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2025, 3, 09, 7, 0, 0), dateTimeFormatter);
             var timeDiffrenceResponse = $"You are {DateDiffInTime(getSpecificUKTime(2025, 3, 09, 7, 0, 1), getSpecificCanadaTime(2025, 3, 09, 7, 0, 0))}m ahead of Canada";
@@ -255,6 +298,11 @@ namespace Tests
         [Microsoft.VisualStudio.TestTools.UnitTesting.Description("Test sceanrio to test datetime diffrence on Eastern November Daylight Time change")]
         public void EasternNovemberTimeChangeTest()
         {
+            /***** TO DO **********
+           Mocked - Ideally from mocking service - 
+           Created a Feed from mocked httpclient endpoint or real httpclient endpoint as switch as required
+           **********************/
+
             ukFormatedTimeResponse = "UK Time: " + getFormatedDate(getSpecificUKTime(2025, 11, 2, 6, 0, 0), dateTimeFormatter);
             canadaFormatedTimeResponse = "Canada Time: " + getFormatedDate(getSpecificCanadaTime(2025, 11, 2, 6, 0, 0), dateTimeFormatter);
             timeDiffrenceResponse = $"You are {DateDiffInTime(getSpecificUKTime(2025, 11, 2, 6, 0, 0), getSpecificCanadaTime(2025, 11, 2, 6, 0, 0))}m ahead of Canada";
@@ -276,7 +324,6 @@ namespace Tests
         }
 
     }
-
     internal class BeforeMethodAttribute : Attribute
     {
     }

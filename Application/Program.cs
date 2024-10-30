@@ -27,12 +27,18 @@ else
 //public partial class Program { }
 *******************************************************************/
 
+/***** TO DO *****************************************************
+Console qpp need to be refactored to take httpclient as constructor paramater (DI - Depenedancy Jenction) by moving it into new class
+Than we can create the console app with a mocked httpclient or real httpclient 
+and we can switch unit testing as required to use real httpclient endpoint or moked service 
+******************************************************************/
+
 using Application;
 using System;
 using System.Globalization;
 using System.Net.Http.Json;
 
-using HttpClient client = new();
+using HttpClient client = new(); 
 var dateTimeFormatter = "dddd dd MMMM yyyy HH:mm:ss";
 
 
