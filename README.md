@@ -53,11 +53,13 @@ a short summary of why you think the application does / doesn't meet the
 acceptance criteria*
 1.
 The acceptance criteria is not clear for "Must display the current time for the UK and Canada"
+
 It does not clearly detailed the precise time zone API to use. Both UK and Canada has no. of time zones APIs. As an e.g. there are 8 different time zone available for Canada
 and there is at least couple of them for UK as well (e.g. London, Isle of Man, GB etc)
 So while implementation the story the time zone API to use needs to clarified correctly
 
 2.The acceptance criteria should have more information for "Must display the difference in time between the UK and Canada".
+
 For e.g. what unit the difference should be like min, hour, seconds. Also the difference of time should be in time only regardless of date. i.e. difference in date time or time only.
 If the difference is on datetime than it should have extra acceptance criteria to check that time UK is always ahead in time compare to Canada
 
@@ -74,6 +76,7 @@ this application?
 if you want), and an example test case in the Tests.cs file to get you started*
 *Again, the code does not have to be perfect, we are looking at the tests you 
 would write for this user story, not their implementation*
+
 I have updated the possible test case into Test.cs. Though it has been written with
 an assumption that required response is Mocked to get the complete coverage as many of the scenarios are not possible
 to run by requesting real API server (e.g. data and time in future or other than current time, 500 response, 404 response)
