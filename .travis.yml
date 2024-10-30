@@ -1,4 +1,4 @@
-language: dotnet-runtime
+language: csharp
 solution: "./ASF.QA.Recruitment.CSharp/ASF.QA.Recruitment.CSharp.sln"
 install:
 - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./ASF.QA.Recruitment.CSharp/ASF.QA.Recruitment.CSharp.sln
