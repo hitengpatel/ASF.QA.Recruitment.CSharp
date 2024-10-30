@@ -1,0 +1,7 @@
+language: csharp
+solution: "./ASF.QA.Recruitment.CSharp/ASF.QA.Recruitment.CSharp.sln"
+install:
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./ASF.QA.Recruitment.CSharp/ASF.QA.Recruitment.CSharp.sln
+script:
+- xbuild ./ASF.QA.Recruitment.CSharp/ASF.QA.Recruitment.CSharp.sln
+- mono ./ASF.QA.Recruitment.CSharp/packages/xunit.runner.console*/tools/xunit.console.exe ./ASF.QA.Recruitment.CSharp/ASF.QA.Recruitment.CSharp.Tests/bin/Debug/ASF.QA.Recruitment.CSharp.Tests.dll
